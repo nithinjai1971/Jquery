@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>The Slider Program</title>
+        <link rel="stylesheet" href="jqueryUI/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryUI/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryUI/jquery-ui.theme.css">
+        <style>
+
+
+        </style>
+        <body>
+            
+            <label for="spanelement">Age:  </label>
+            <span id="spanelement"> </span>
+            <br>
+            <br>
+
+            <div id="fortheslider"> </div>
+            <br>
+            <br>
+
+            
+
+
+
+            </div>
+            <script src="importedcode.js"></script>
+            <script src="jqueryUI/jquery-ui.js"></script>
+            <script>
+                var sliderelement = $("#fortheslider");
+                $("#fortheslider").slider({
+                    range: true,
+                    min: 21,
+                    max: 55,
+                    values:[21,30],
+                    slide: function (event,ui){
+                        $("#spanelement").html(ui.values[0]+ ' - ' +ui.values[1]+' Years ');
+                        
+                    },
+                    
+                    
+
+
+
+
+                });
+                
+
+
+
+            </script>
+
+            
+            
+        </body>
+    </head>
+</html>
