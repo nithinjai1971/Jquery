@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title> Changing the background color</title>
+        <style>
+            #thediv{
+                
+                color: red;
+                padding:30px;
+                
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="thediv">
+        <p id="firstpara">Today has been a very good day for india in the tokyo olympics</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <button id="button1">Click here</button>
+    </body>
+
+    <script src="importedcode.js"></script>
+    <script>
+        
+    (document).ready(function(){
+        $("body").on({
+    
+        mouseenter: function(){
+            $(this).css("background-color", "gray");
+        },  
+        
+        mouseleave: function(){
+            $(this).css("background-color", "red");
+        }, 
+        
+        dblclick: function(){
+            $(this).css("background-color", "yellow");
+        }
+       
+    });
+});
+
+                    
+                    
+
+
+            
+
+
+                
+
+                 
+                    
+            
+
+            
+
+
+            
+
+
+
+    
+    </script>
+</html>
