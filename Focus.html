@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title> 3rd program</title></head>
+        <body>
+        <form>
+            <label>First Name</label><br>
+            <input type="text" name="text" id="firstinput">
+        </br>
+            <label>Last name</label><br>
+            <input type="text" name="text" id="secondinput"><br>
+
+    
+
+            <label> Gender</label>
+            <select>
+
+                <option id="firstoption" value="Male">Male</option>
+                <option id="secondoption" value="Female">Female</option>
+
+
+
+            </select>
+            <br>
+
+            <label> Click the button to see changes</label><br>
+            <input type="button" id="btn1" name="button"> Click here</input>
+
+        </form>
+
+    </body>
+
+    <script src="importedcode.js"></script>
+    <script>
+
+        $(function(){
+
+            $('#firstinput').focus(function(){
+
+                $(this).css('background','pink');
+            }
+            
+            
+            
+            
+            
+            );
+
+            $('#secondinput').focus(function(){
+
+                $(this).css('background','yellow');
+
+
+
+
+
+            });
+
+
+
+
+
+        }
+        
+        
+        
+        
+        
+        );
+
+
+
+
+
+
+    </script>
+</html>
