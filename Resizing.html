@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Resizing the element</title>
+        <style>
+            .firstonee{
+                width: 200px;
+                height: 200px;
+                background-color: black;
+                color:chartreuse;
+                padding: 50px;
+
+            }
+
+        </style>
+        <body>
+            <div id="firstone" class="firstonee"> 
+                <h2>sample rectangle</h2>
+            </div>
+
+            <div id="secondone">
+                <button id="button1">Click here to animate</button>
+            </div>
+        </body>
+        <script src="importedcode.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#button1").click(function(){
+                    $("#firstone").animate({
+                        width:'400px',
+                        height:'400px'
+
+                        
+
+
+
+                    },3000);
+
+
+
+                });
+
+
+
+            });
+
+
+
+
+
+        </script>
+    </head>
+</html>
